@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1TwoSum", "1TwoSum\1TwoSum.csproj", "{34AB49BC-B254-408F-840C-700BB9688168}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "500KeyboardRow", "500KeyboardRow\500KeyboardRow.csproj", "{5B35E403-4871-4138-825B-4A3CE80D0136}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{34AB49BC-B254-408F-840C-700BB9688168}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34AB49BC-B254-408F-840C-700BB9688168}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34AB49BC-B254-408F-840C-700BB9688168}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B35E403-4871-4138-825B-4A3CE80D0136}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B35E403-4871-4138-825B-4A3CE80D0136}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B35E403-4871-4138-825B-4A3CE80D0136}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B35E403-4871-4138-825B-4A3CE80D0136}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
