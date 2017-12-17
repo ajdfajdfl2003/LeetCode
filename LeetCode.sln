@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1TwoSum", "1TwoSum\1TwoSum.csproj", "{34AB49BC-B254-408F-840C-700BB9688168}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "500KeyboardRow", "500KeyboardRow\500KeyboardRow.csproj", "{5B35E403-4871-4138-825B-4A3CE80D0136}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "485MaxConsecutiveOnes", "485MaxConsecutiveOnes\485MaxConsecutiveOnes.csproj", "{1278B781-74B3-4B6E-939A-21E591B03FEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{5B35E403-4871-4138-825B-4A3CE80D0136}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B35E403-4871-4138-825B-4A3CE80D0136}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B35E403-4871-4138-825B-4A3CE80D0136}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1278B781-74B3-4B6E-939A-21E591B03FEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1278B781-74B3-4B6E-939A-21E591B03FEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1278B781-74B3-4B6E-939A-21E591B03FEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1278B781-74B3-4B6E-939A-21E591B03FEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
