@@ -1,13 +1,24 @@
 package com.angus.leetcode.LongestSubstringWithoutRepeatingCharacters;
 
-import java.util.Arrays;
-
 public class Solution {
     public static Solution newInstance() {
         return new Solution();
     }
 
     public int lengthOfLongestSubstring(String s) {
-        return (int) s.chars().distinct().count();
+        String result = "";
+        String temp = "";
+        for (int i = 0; i < s.length(); i++) {
+            String curr = String.valueOf(s.charAt(i));
+            if (!temp.contains(curr)) {
+                temp += curr;
+            } else {
+                temp = (temp.length() > 0 ? temp.substring(temp.indexOf(curr), temp.length()) : "");
+            }
+            if (temp.length() > result.length()) {
+                result = temp;
+            }
+        }
+        return result.length();
     }
 }
