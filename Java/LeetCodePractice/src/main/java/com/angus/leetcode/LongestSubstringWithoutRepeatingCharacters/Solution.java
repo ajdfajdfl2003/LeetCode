@@ -13,7 +13,7 @@ public class Solution {
             if (!temp.contains(curr)) {
                 temp += curr;
             } else {
-                temp = (temp.length() > 0 ? temp.substring(temp.indexOf(curr), temp.length()) : "");
+                temp = (temp.length() > 0 ? temp.substring(temp.indexOf(curr) + 1, temp.length()) : "") + curr;
             }
             if (temp.length() > result.length()) {
                 result = temp;
