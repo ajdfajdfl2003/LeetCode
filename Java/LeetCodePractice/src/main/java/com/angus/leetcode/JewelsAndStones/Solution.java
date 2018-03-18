@@ -5,10 +5,10 @@ public class Solution {
         return new Solution();
     }
 
-    public int numJewelsInStones(String j, String s) {
+    public int numJewelsInStones(String J, String S) {
         int result = 0;
-        for (int i = 0; i < s.length(); i++) {
-            if (j.contains(String.valueOf(s.charAt(i)))) {
+        for (int i = 0; i < S.length(); i++) {
+            if (J.contains(String.valueOf(S.charAt(i)))) {
                 result++;
             }
         }
