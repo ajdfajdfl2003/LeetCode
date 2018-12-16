@@ -1,19 +1,21 @@
 package com.angus.leetcode.UniqueEmailAddresses;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashSet;
+import java.util.Set;
 
 class Solution {
     int numUniqueEmails(String[] emails) {
-        List<String> result = new ArrayList<>();
-
+        Set<String> set = new HashSet<>();
         for (String email : emails) {
-            String[] newEmails = email.split("@");
-            String[] localNames = newEmails[0].split("[+]");
-            email = localNames[0].replace(".", "") + newEmails[1];
-            result.add(email);
+            String[] names = email.split("@");
+            String domain = names[1];
+            String local = names[0];
+            int plusIndex = local.indexOf("+");
+            if (-1 != plusIndex) {
+                local = local.substring(0, plusIndex);
+            }
+            set.add(local.replace(".", "") + "@" + domain);
         }
-
-        return (int) result.stream().distinct().count();
+        return set.size();
     }
 }
