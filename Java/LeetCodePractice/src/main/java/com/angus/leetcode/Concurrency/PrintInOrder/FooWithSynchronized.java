@@ -1,6 +1,6 @@
 package com.angus.leetcode.Concurrency.PrintInOrder;
 
-public class FooWithSynchronized {
+public class FooWithSynchronized implements Foo {
     private int i;
 
     public FooWithSynchronized() {
