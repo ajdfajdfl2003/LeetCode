@@ -3,18 +3,12 @@ package com.angus.leetcode.Concurrency.PrintInOrder;
 import java.util.concurrent.CountDownLatch;
 
 public class FootWithCountdownLatch implements Foo {
-    CountDownLatch countDownLatch1;
-    CountDownLatch countDownLatch2;
-
-    public FootWithCountdownLatch() {
-        countDownLatch1 = new CountDownLatch(1);
-        countDownLatch2 = new CountDownLatch(2);
-    }
+    private final CountDownLatch countDownLatch1 = new CountDownLatch(1);
+    private final CountDownLatch countDownLatch2 = new CountDownLatch(1);
 
     public void first(Runnable printFirst) throws InterruptedException {
         printFirst.run();
         countDownLatch1.countDown();
-        countDownLatch2.countDown();
     }
 
     public void second(Runnable printSecond) throws InterruptedException {
